@@ -1,0 +1,179 @@
+.fixed{
+    position: fixed ;
+    transition: all linear 0.5s;
+    // border-bottom: 2px solid #f2f2f2;
+    box-shadow: 0px 0px 6px rgba(14, 19, 24, 0.08);
+    background-color: #fff;
+    padding: 8px 0 ; 
+    .openSearch-btn .icon {
+        color: #043c60; 
+    }
+    .big-menu > li a:hover , .openSearch-btn:hover .icon , .lang-drop:hover .icon{
+        color: #7dba4f;
+    }
+    
+  }
+ 
+
+
+  .stayTop{
+    top: -150px;
+  }
+
+
+  html[dir="ltr"]{
+    .openSearch-btn .icon , .search-input-icon i , .clients-reviews .item .icon{
+      transform: scaleX(-1);
+    }
+    .banner-desc .sub-title{
+      line-height: 1.35;
+    }
+    .service-item .service-anchor .icon , .offer-item .details-anchor .icon, .branch-item .details-anchor .icon{
+      transform: rotate(180deg);
+    }
+    .general-desc{
+      line-height: 1.5;
+    }
+    .vision .general-desc{
+      line-height: 1.5;
+    }
+    .service-item .service-anchor , .offer-item .details-anchor{
+      display: flex;
+      align-items: center;
+    }
+    .feature-item .feature-title{
+      width: 245px;
+    }
+    .clients-reviews .item .quote-text{
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+    .branch-item .branch-title{
+      height: 60px;
+      margin-bottom: 5px;
+    }
+    .img-item .para{
+      line-height: 1.4;
+    }
+    .general-title{
+      line-height: 1.2;
+    }
+  }
+
+
+  @include min-992{
+    .big-menu > li a{
+      font-size: 17px;
+    }
+    .fixed{
+      .logo img{
+        width: 80px;
+      }
+      .big-menu > li a , .lang-drop .icon {
+        color: #043c60;
+      }
+    
+    }
+  }
+
+  @include max-992 {
+    .fixed{
+      .openNav-btn .icon {
+        color: #043c60;
+      }
+    }
+    html[dir="ltr"] {
+      .feature-item .feature-title{
+        width: 220px;
+      }
+    }
+  
+  }
+
+
+
+@include max-768 {
+  html[dir="ltr"]{
+    .service-item .service-anchor, .offer-item .details-anchor{
+      justify-content: center;
+    }
+    footer .footer-title::after{
+      content: "\f054";
+    }
+    .arrow-rotate::after{
+      transform: rotate(90deg);
+    }
+     .branch-item .branch-title{
+      height: auto;
+      margin-bottom: 12px;
+    }
+     .general-title{
+      line-height: 1.4;
+    }
+    .clients-reviews .clients-title{
+      line-height: 1.35;
+    }
+    .feature-item .feature-title{
+      width: 220px;
+      width: 100%;
+    }
+    .about .general-desc{
+      line-height: 1.5;
+    }
+    .branch-holder .quick-drop li:first-of-type{
+      margin-bottom: 12px;
+  }
+  .branch-holder .icon{
+    margin-top: 3px;
+  }
+    // .feature-item .feature-title{
+    //   width: 185px;
+    // }
+    .branch-holder {
+      .location , .phone-num{
+        line-height: 1.4;
+      }
+    } 
+    .branch-holder .quick-drop li{
+      align-items: flex-start;
+    }
+    // .branch-holder .icon{
+    //   height: 40px;
+    //   display: flex;
+    //   align-items: flex-start;
+    // }
+  }
+
+  html[dir="rtl"]{
+    .branch-holder .location, .branch-holder .phone-num , .quick-links ul li a{
+      line-height: 40px;
+    }
+  }
+ 
+
+
+}
+
+@media screen and (max-width : 420px) {
+    .targets-list li .icon{
+      margin-inline-end: 10px;
+    }
+    .targets-list li  , .vision .general-desc{
+      font-size: 18px;
+    }
+}
+@media screen and (max-width : 410px) {
+  html[dir=ltr] .feature-item .feature-title{
+    font-size: 17px;
+    line-height: 1.45;
+  }
+}
+
+@media screen and (max-width : 380px) {
+  .targets-list li  , .vision .general-desc{
+    font-size: 17px;
+  }
+  .targets-list li .icon{
+    font-size: 20px;
+  }
+}

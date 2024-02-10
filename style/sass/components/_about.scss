@@ -1,0 +1,122 @@
+.about{
+    padding-top: 107px;
+    padding-bottom: 121px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(200deg, #6fc1df 0%, #b9f7cf 77%, #b9f7cf 100%);
+    .circle-half{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: 2;
+    }
+    .circle-plus{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .radial-polygon{
+        position: absolute;
+        bottom: 0;
+        left: 22%;
+        z-index: 2;
+    }
+    .circle-full{
+        position: absolute;
+        bottom: 50px;
+        left: -95px;
+        z-index: 2;
+    }
+    .general-desc{
+        margin-bottom: 55px;
+    }
+}
+.statistics-parent{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 33px;
+    .stat-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 260px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+}
+.stat-item{
+    .icon{
+        font-size: 40px;
+        color: #7dba4f;
+        margin-bottom: 25px;
+    }
+    .num{
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        font-size: 40px;
+        line-height: 30px;
+        color: #043c60;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .text{
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+        color: #043c60;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@include max-1200{
+    .statistics-parent{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+}
+
+@include max-768 {
+    .stat-item .text{
+        font-size: 20px;
+    }
+    .about .circle-full{
+        left: -60px;
+    }
+    .statistics-parent{
+        gap: 20px;
+        .stat-item{
+            width: calc(50% - 10px);
+            height: 240px;
+        }
+    }
+    .about{
+        padding: 50px 0;
+        .general-title{
+            position: relative;
+            z-index: 3;
+        }
+    }
+    .about .general-desc{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .statistics-parent{
+        .stat-item{
+            width: 100%;
+            max-width: 260px;
+            height: 260px;
+        }
+    }
+}

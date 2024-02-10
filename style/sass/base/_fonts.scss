@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'PNU';
+  src: url('../fonts/pnu-font/PNU-Bold.woff2') format('woff2'),
+      url('../fonts/pnu-font/PNU-Bold.woff') format('woff'),
+      url('../fonts/pnu-font/PNU-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PNU';
+  src: url('../fonts/pnu-font/PNU-Regular.woff2') format('woff2'),
+      url('../fonts/pnu-font/PNU-Regular.woff') format('woff'),
+      url('../fonts/pnu-font/PNU-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PNU';
+  src: url('../fonts/pnu-font/PNU-Medium.woff2') format('woff2'),
+      url('../fonts/pnu-font/PNU-Medium.woff') format('woff'),
+      url('../fonts/pnu-font/PNU-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PNU';
+  src: url('../fonts/pnu-font/PNU-Light.woff2') format('woff2'),
+      url('../fonts/pnu-font/PNU-Light.woff') format('woff'),
+      url('../fonts/pnu-font/PNU-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+

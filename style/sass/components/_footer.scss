@@ -1,0 +1,227 @@
+
+footer{
+   padding-top: 90px;
+   padding-bottom: 80px;
+    background-color: #043c60;
+    .footer-title{
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+}
+.logo-info{
+    margin-bottom: 20px;
+    img{
+        width: 122px;
+    }
+}
+.footer-items{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 100px;
+}
+.img-item{
+    .para{
+        width: 289px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.quick-links {
+ul li {
+    line-height: 36px;
+   a{
+    font-size: 16px;
+    color: #ffffff;
+    transition: all linear .2s;
+    &:hover{
+        color: $main-color;
+    }
+   }
+}
+}
+
+
+
+
+
+.copyright{
+    .copyright-txt{
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .tasawk{
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 300;
+        margin: 0;
+        img{
+            margin-inline-start: 8px;
+        }
+    }
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+    column-gap: 5px;
+    a{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #125078;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all linear .2s;
+        &:hover{
+            background-color: $main-color;
+            i {
+                color: #fff;
+            }
+        }
+    }
+    i {
+        font-size: 16px;
+        color: #ffffff;
+        transition: all ease-in-out .2s;
+    }
+}
+.branch-holder{
+    .quick-drop  li{
+        display: flex;
+        align-items: center;
+    }
+    margin-bottom: 30px;
+    .footer-title{
+        font-size: 18px;
+        margin-bottom: 15px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    .location , .phone-num{
+        font-size: 18px;
+        line-height: 36px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-inline-start: 10px;
+    }
+    .icon{
+        font-size: 16px;
+        color: #63c8f3;
+    }
+}
+.branch-holder:first-of-type{
+    .footer-title{
+        margin-bottom: 30px;
+    }
+}
+.branch-holder:last-of-type{
+    margin-bottom: 0;
+}
+
+
+
+@include min-768 {
+    .footer-item{
+        margin-top: 35px;
+    }
+    .img-item{
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+@include max-768 {
+    .branch-holder, .branch-holder:first-of-type .footer-title{
+        margin-bottom: 0;
+    }
+    .quick-drop{
+        display: none;
+        padding-top: 10px;
+    }
+   
+    footer{
+        padding: 50px 0 40px 0 ;
+    }
+    .footer-items{
+        flex-direction: column;
+        .img-item{
+            order: 6;
+            margin: 40px  auto 0 auto;
+        }
+        .footer-item{
+            width: 100%;
+        }
+    }
+    .social{
+        justify-content: center;
+    }
+    .img-item .para{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-title{
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        &::after {
+            font-size: 16px;
+            content: "\f053";
+            font-weight: 300;
+            transition: all linear .2s;
+            font-family: "Font Awesome 6 Pro";
+            position: relative;
+        }
+    }
+    .branch-holder .footer-title{
+        margin-bottom: 0;
+    }
+    .branch-holder{
+        padding-bottom: 20px;
+    }
+ 
+  
+    .logo-info{
+        display: flex;
+        justify-content: center;
+    }
+    .arrow-rotate::after {
+        transform: rotate(-90deg)  ;
+    }
+    .copyright{
+        .tasawk{
+            text-align: center;
+        }
+        .copyright-txt{
+            text-align: center;
+        }
+    } 
+    .logo-info img{
+        width: 100px;
+    }
+
+}
+
+
+
+

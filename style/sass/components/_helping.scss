@@ -1,0 +1,113 @@
+.helping{
+    padding: 115px 0 ;
+}
+.helping-parent{
+    display: flex;
+    align-items: center;
+    column-gap:10px ;
+}
+.helping-item{
+    padding-top: 41px;
+    padding-bottom: 30px;
+    // padding-inline: 30px;
+    text-align: center;
+    width: 220px;
+    min-height: 353px;
+    max-height: max-content;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    transition: all ease-in-out .2s;
+    &:hover{
+        filter: drop-shadow(0 0 25px rgba(0,0,0,0.05));
+       border-color: transparent;
+    }
+    .icon{
+        font-size: 40px;
+        color: #7dba4f;
+        margin-bottom: 30px;
+    }
+    .item-title{
+        font-size: 24px;
+        line-height: 30px;
+        color: #043c60;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    .item-desc{
+        font-size: 20px;
+        line-height: 28px;
+        color: #043c60;
+        text-align: center;
+        margin-bottom: 30px;
+        width: 176px;
+        margin-inline: auto;
+        min-height: 84px;
+    }
+    .item-anchor{
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #7dba4f;
+        font-size: 18px;
+        transition: all ease-in-out .2s;
+        color: #ffffff;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        &:hover{
+            background-color: #043c60;
+
+        }
+    }
+}
+
+@include max-1200{
+    .helping-parent{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: center;
+    }
+}
+
+
+@include max-768 {
+    .helping{
+        padding: 50px 0;
+    }
+    .helping-parent{
+        align-items: flex-start;
+    }
+    .helping-item{
+        width: calc(50% - 5px);
+        padding-inline: 5px;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        // height: max-content;
+        min-height: max-content;
+        .item-desc{
+            width: 100%;
+            font-size:18px;
+            line-height: 26px;
+            min-height: 78px;
+        }
+        .item-title{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+       .icon{
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+         .item-anchor{
+            width: 140px;
+
+        }
+    }
+
+}
