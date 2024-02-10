@@ -208,12 +208,16 @@ $(".openSearch-btn").click(function(){
   $("body").addClass("overflow-hidden") ;
   $(".search-input").addClass("open-search");
 })
-$(".closeSearch-btn").click(function(){
+$(".search-overlay").click(function(){
     $(".search-input").removeClass("open-search");
     setTimeout(() => {
     $(".search-overlay").fadeOut(200);
   }, 200);
   $("body").removeClass("overflow-hidden") ;
+})
+
+$(".search-input").click(function(e){
+  e.stopPropagation();
 })
 
 
