@@ -41,7 +41,7 @@ header{
         margin-inline-end: 0;
     }
    > li{
-        margin-inline-end: 25px;
+        margin-inline-end: 30px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -381,7 +381,6 @@ header{
  }
     .icon-rotate::after{
         transform:  rotate(180deg)  ;
-        // top: 13px ;
     }
    
     .logo img{

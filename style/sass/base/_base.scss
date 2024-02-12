@@ -13,7 +13,6 @@ body {
 
 .general-title {
   font-size: 36px;
-  // line-height: 30px;
   color: $second-color;
   font-weight: 700;
   text-align: center;
@@ -21,7 +20,7 @@ body {
 }
 .general-desc{
   width: 1138px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   color: #043c60;
  margin-inline: auto;
@@ -97,7 +96,7 @@ a , button {
 ::-webkit-scrollbar-thumb {
   background:  $main-color;
   border-radius: 15px;
-  // width: 7px;
+
 }
 
 ::-webkit-scrollbar-track{
@@ -234,7 +233,6 @@ animation-iteration-count: infinite;
 
 @include max-992 {
   .general-desc{
-    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
   }

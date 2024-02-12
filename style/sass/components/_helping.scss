@@ -1,18 +1,28 @@
 .helping{
     padding: 115px 0 ;
+    .swiper-pagination{
+        display: none;
+    }
+    .swiper{
+        overflow: unset;
+        width: 100%;
+    }
+    .swiper-slide{
+        width: 220px;
+    }
+    .swiper-wrapper{
+        display: flex;
+        align-items: center;
+        column-gap:10px ;
+    }
 }
-.helping-parent{
-    display: flex;
-    align-items: center;
-    column-gap:10px ;
-}
+
 .helping-item{
     padding-top: 41px;
     padding-bottom: 30px;
-    // padding-inline: 30px;
     text-align: center;
+    padding-inline: 20px;
     width: 220px;
-    min-height: 353px;
     max-height: max-content;
     border-radius: 15px;
     background-color: #ffffff;
@@ -28,7 +38,7 @@
         margin-bottom: 30px;
     }
     .item-title{
-        font-size: 24px;
+        font-size: 18px;
         line-height: 30px;
         color: #043c60;
         font-weight: 700;
@@ -37,7 +47,7 @@
         margin-bottom: 15px;
     }
     .item-desc{
-        font-size: 20px;
+        font-size: 16px;
         line-height: 28px;
         color: #043c60;
         text-align: center;
@@ -51,7 +61,7 @@
         height: 50px;
         border-radius: 25px;
         background-color: #7dba4f;
-        font-size: 18px;
+        font-size: 16px;
         transition: all ease-in-out .2s;
         color: #ffffff;
         font-weight: 500;
@@ -68,7 +78,7 @@
 }
 
 @include max-1200{
-    .helping-parent{
+    .helping .swiper-wrapper{
         flex-wrap: wrap;
         row-gap: 10px;
         justify-content: center;
@@ -77,27 +87,30 @@
 
 
 @include max-768 {
-    .helping{
-        padding: 50px 0;
-    }
-    .helping-parent{
-        align-items: flex-start;
+    .helping .swiper{
+        overflow: hidden;
     }
     .helping-item{
-        width: calc(50% - 5px);
-        padding-inline: 5px;
-        padding-top: 30px;
-        padding-bottom: 25px;
-        // height: max-content;
-        min-height: max-content;
+        width: 100%;
+    }
+    .helping .swiper-pagination{
+        display: block;
+        bottom: -45px;
+    }
+    .helping .swiper-wrapper{
+        flex-wrap: unset;
+        row-gap: unset;
+        justify-content: unset;
+        column-gap: unset;
+    }
+    .helping{
+        padding: 50px 0 85px 0;
+    }
+    .helping-item{
         .item-desc{
             width: 100%;
-            font-size:18px;
-            line-height: 26px;
-            min-height: 78px;
         }
         .item-title{
-            font-size: 20px;
             margin-bottom: 10px;
         }
        .icon{
@@ -110,4 +123,11 @@
         }
     }
 
+}
+
+
+@media screen and (max-width : 450px) {
+    .helping-item{
+        padding-inline: 10px ;
+    }
 }

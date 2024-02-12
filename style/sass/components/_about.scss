@@ -66,7 +66,7 @@
     }
     .text{
         width: 100%;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 30px;
         color: #043c60;
         font-weight: 500;
@@ -86,16 +86,13 @@
 }
 
 @include max-768 {
-    .stat-item .text{
-        font-size: 20px;
-    }
     .about .circle-full{
         left: -60px;
     }
     .statistics-parent{
-        gap: 20px;
+        gap: 10px;
         .stat-item{
-            width: calc(50% - 10px);
+            width: calc(50% - 5px);
             height: 240px;
         }
     }
@@ -111,12 +108,16 @@
     }
 }
 
-@media screen and (max-width : 540px) {
-    .statistics-parent{
-        .stat-item{
-            width: 100%;
-            max-width: 260px;
-            height: 260px;
-        }
+
+@media screen and ( max-width : 450px) {
+    .statistics-parent .stat-item{
+        height: auto;
+        padding: 25px 5px;
+    }
+    .stat-item .text{
+        font-size: 18px;
+    }
+    .stat-item .num , .stat-item .icon{
+        font-size: 35px;
     }
 }

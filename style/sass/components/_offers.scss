@@ -48,7 +48,7 @@
        
     }
     .details-anchor{
-        font-size: 20px;
+        font-size: 16px;
         color: #7dba4f;
         font-weight: 500;
         text-align: right;
@@ -75,7 +75,7 @@
         height: 50px;
         border-radius: 25px;
         background-color: #7dba4f;
-        font-size: 22px;
+        font-size: 20px;
         color: #ffffff;
         font-weight: 700;
         display: flex;
@@ -97,12 +97,23 @@
 .branches{
     padding-top: 95px;
     padding-bottom: 115px;
+    .swiper-pagination{
+        display: none;
+    }
+    .swiper{
+        overflow: unset;
+        width: 100%;
+    }
+    .swiper-slide{
+        width: 360px;
+    }
+    .swiper-wrapper{
+        display: flex;
+        align-items: center;
+        column-gap: 30px ;
+    }
 }
-.branches-parent{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 30px;
-}
+
  .branch-item{
     width: 360px;
     .img-holder{
@@ -113,7 +124,7 @@
         }
     } 
     .branch-title{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 30px;
         color: #043c60;
         font-weight: 700;
@@ -123,7 +134,7 @@
         display: block;
     }
     .branch-distance{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 28px;
         color: #043c60;
         display: block;
@@ -138,30 +149,43 @@
   
 
   @include max-1200{
-    .branches-parent{
+    .branches .swiper-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 30px;
     }
   }
 
   @include max-992 {
+    .branches .swiper-pagination{
+        display: block;
+        bottom: -45px;
+    }
     .branch-item{
-        width: calc(50% - 15px);
+        width: 100%;
+    }
+    .branches .swiper{
+        overflow: hidden;
+    }
+    .branches .swiper-wrapper{
+        display: flex;
+        flex-wrap: unset;
+        justify-content: unset;
+        gap: 0;
+        align-items: unset;
     }
   }
 
 
 @include max-768 {
-    .branch-item .branch-title{
-        font-size: 20px;
-    }
     .branches{
-        padding: 50px 0;
+        padding: 50px 0 85px 0;
     }
     .branch-item{
         width: 100%;
         max-width: 360px;
+        margin-inline: auto;
     }
     .offers{
         .swiper{

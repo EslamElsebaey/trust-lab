@@ -1,7 +1,6 @@
 .fixed{
     position: fixed ;
     transition: all linear 0.5s;
-    // border-bottom: 2px solid #f2f2f2;
     box-shadow: 0px 0px 6px rgba(14, 19, 24, 0.08);
     background-color: #fff;
     padding: 8px 0 ; 
@@ -63,7 +62,7 @@
 
   @include min-992{
     .big-menu > li a{
-      font-size: 17px;
+      font-size: 14px;
     }
     .fixed{
       .logo img{
@@ -94,6 +93,9 @@
 
 @include max-768 {
   html[dir="ltr"]{
+    .stat-item .text{
+      min-height: 60px;
+    }
     .service-item .service-anchor, .offer-item .details-anchor{
       justify-content: center;
     }
@@ -126,9 +128,7 @@
   .branch-holder .icon{
     margin-top: 3px;
   }
-    // .feature-item .feature-title{
-    //   width: 185px;
-    // }
+  
     .branch-holder {
       .location , .phone-num{
         line-height: 1.4;
@@ -137,11 +137,7 @@
     .branch-holder .quick-drop li{
       align-items: flex-start;
     }
-    // .branch-holder .icon{
-    //   height: 40px;
-    //   display: flex;
-    //   align-items: flex-start;
-    // }
+
   }
 
   html[dir="rtl"]{

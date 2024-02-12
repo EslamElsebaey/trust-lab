@@ -93,6 +93,53 @@ const offersSwiper = new Swiper(' .offers .swiper', {
 });
 
 
+//  helping swiper
+if($(window).innerWidth() < 768){
+  const helpingSwiper = new Swiper(' .helping .swiper', {
+    loop: true,
+    autoplay: true,
+    draggable: true,
+    allowTouchMove : true ,
+   
+    pagination: {
+      el: '.helping .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 2,
+        spaceBetween : 10 ,
+      },
+    }
+  });
+  
+}
+
+//  branches swiper
+if($(window).innerWidth() < 992){
+  const branchesSwiper = new Swiper(' .branches .swiper', {
+    loop: true,
+    autoplay: true,
+    draggable: true,
+    allowTouchMove : true ,
+    pagination: {
+      el: '.branches .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 1,
+        spaceBetween : 10 ,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween : 20 ,
+      },
+    }
+  });
+  
+}
+
 
 
 // Clients review swiper

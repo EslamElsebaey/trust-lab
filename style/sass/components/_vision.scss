@@ -33,7 +33,7 @@
 }
 .targets-list{
     li{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 40px;
         color: #043c60;
         display: flex;
@@ -48,7 +48,6 @@
 
 .mycontainer{
     padding: 0 15px;
-    // margin: 0 auto;
     margin: 0;
     margin-inline-start: auto;
 }
@@ -119,7 +118,7 @@
     .vision .general-title{
         font-size: 30px;
     }
-    .targets-list li .icon , .targets-list li{
+    .targets-list li .icon {
         font-size: 20px;
     }
     .targets-list li .icon {

@@ -57,13 +57,11 @@
         font-size: 20px;
         font-weight: 500;
         text-align: start;
-        // line-height: 30px;
         transition: all ease-in-out .2s;
         .icon{
             font-size: 18px;
             margin-inline-start: 10px;
             vertical-align: middle;
-            // line-height: 30px;
         }
         &:hover{
            color: #043c60;
@@ -85,7 +83,7 @@ height: 53px;
 border-radius: 26px;
 background-color: transparent;
 border: 2px solid #043c60;
-font-size: 18px;
+font-size: 16px;
 line-height: 30px;
 color: #043c60;
 font-weight: 500;
