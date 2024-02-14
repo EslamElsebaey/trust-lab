@@ -229,7 +229,10 @@ prevScrollposition = $(window).scrollTop();
 $(window).on("scroll", function () {
    if ($(window).scrollTop() > 150) {
        $(myHeader).addClass("fixed");
-       $(".logo img").attr("src" , "images/footer-logo.png")
+       if(!$(".pages-body")){
+        $(".logo img").attr("src" , "images/footer-logo.png")
+       }
+       
    } else {
        $(myHeader).removeClass("fixed");
        if(!$(".pages-body")){
