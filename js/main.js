@@ -232,12 +232,20 @@ $(window).on("scroll", function () {
        $(".logo img").attr("src" , "images/footer-logo.png")
    } else {
        $(myHeader).removeClass("fixed");
-       $(".logo img").attr("src" , "images/logo.png")
+       if(!$(".pages-body")){
+        $(".logo img").attr("src" , "images/logo.png")
+       }
+       
    }
    var scrollTop = $(window).scrollTop();
    prevScrollposition < scrollTop && prevScrollposition > 0 ? myHeader.classList.add("stayTop") : myHeader.classList.remove("stayTop"), (prevScrollposition = scrollTop);
  });
 
+ 
+
+ if($(".pages-body")){
+  $(".logo img").attr("src" , "images/footer-logo.png")
+ }
 
 
 

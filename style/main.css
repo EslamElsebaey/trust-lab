@@ -2140,6 +2140,13 @@ html[dir=ltr] .general-title {
   line-height: 1.2;
 }
 
+.pages-body {
+  height: 2000px;
+}
+.pages-body .big-menu > li a, .pages-body .lang-drop .icon, .pages-body .openSearch-btn .icon, .pages-body .openNav-btn .icon {
+  color: #043c60;
+}
+
 @media only screen and (min-width: 992px) {
   .big-menu > li a {
     font-size: 14px;

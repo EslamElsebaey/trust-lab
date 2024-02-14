@@ -60,6 +60,15 @@
   }
 
 
+
+  .pages-body{
+    height: 2000px;
+    .big-menu > li a ,  .lang-drop .icon , .openSearch-btn .icon , .openNav-btn .icon{
+      color: $second-color;
+    }
+   
+  }
+
   @include min-992{
     .big-menu > li a{
       font-size: 14px;
